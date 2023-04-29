@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tp5.laboratorio1;
 
-/**
- *
- * @author 54266
- */
 public class Arreglo {
+    
+    
+ //a) Método sumarLista que reciba por parámetro un arreglo unidimensional de
+//enteros y muestre por pantalla la suma y promedio de los mismos
+    public static void sumarLista(int[] unidimensional) {
+
+        int suma = 0;
+
+        for (int i = 0; i < unidimensional.length; i++) {
+
+            suma = unidimensional[i] + suma;
+
+        }
+
+        double promedio = suma / unidimensional.length;
+
+        System.out.println("Suma: " + suma + "\nPromedio: " + promedio);
+
+    }
     
 }
