@@ -14,7 +14,7 @@ public class PruebaArreglo {
         Arreglo.sumarLista(unidimensional);
 
         //ARREGLO BIDIRECCIONAL IRREGULAR:
-        System.out.println("\n");
+      System.out.println("-------------------------------------------");
         int arreglo[][] = new int[3][];
 
         arreglo[0] = new int[3];
@@ -38,9 +38,15 @@ public class PruebaArreglo {
         System.out.println("la cantidad de vocales que tiene la frase es: "
                 + Arreglo.cuentaVocales(sCadena));
         
-        
-        
-        
+        System.out.println("-------------------------------------------");
+        //CADENA Y CARACTER:
+        String cadena2 = "astronauta";
+        char caracter = 'o';
+       
+        System.out.println("La Palabra a analizar es " + cadena2 );
+        System.out.println("El caracter (" + caracter + ") esta " + Arreglo.cuentaCaracter(cadena2, caracter) + " vez/veces en esta palabra ");
+                
+        System.out.println("-------------------------------------------");
         
         
     }
