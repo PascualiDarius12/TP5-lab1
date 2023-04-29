@@ -1,10 +1,7 @@
-
 package tp5.laboratorio1;
-
 
 public class PruebaArreglo {
 
-    
     public static void main(String[] args) {
         //ARREGLO UNIDIMENSIONAL:
         int[] unidimensional = new int[10];
@@ -15,10 +12,8 @@ public class PruebaArreglo {
         }
         System.out.println("");
         Arreglo.sumarLista(unidimensional);
-        
+
         //ARREGLO BIDIRECCIONAL IRREGULAR:
-        
-        
         System.out.println("\n");
         int arreglo[][] = new int[3][];
 
@@ -35,6 +30,19 @@ public class PruebaArreglo {
             System.out.println("");
         }
         System.out.println("Numero mayor:" + Arreglo.buscarMayor(arreglo));
+
+        System.out.println("-------------------------------------------");
+
+        String sCadena = "pinocho nunca miente";
+        System.out.println("la frase a analizar es: " + sCadena);
+        System.out.println("la cantidad de vocales que tiene la frase es: "
+                + Arreglo.cuentaVocales(sCadena));
+        
+        
+        
+        
+        
+        
     }
-    
+
 }
