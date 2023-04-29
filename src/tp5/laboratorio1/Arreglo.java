@@ -57,6 +57,22 @@ public class Arreglo {
         return cantVocales;
     }
     
+//    d) Método cuentaCaracter que reciba por parámetro un String y un caracter, luego
+//    retorne la cantidad de veces que se repite en la cadena el carácter recibido.
+    
+    public static int cuentaCaracter(String palabra, char caracter){
+        int cantCaracter = 0;
+        char[] arregloPalabra;
+        arregloPalabra = palabra.toCharArray();
+        for (int i = 0; i < palabra.length(); i++) {
+            if(arregloPalabra[i]== caracter){
+                cantCaracter= cantCaracter + 1;
+            }
+            
+            
+        }
+        return cantCaracter;
+    }
 
     
 }
