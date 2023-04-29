@@ -39,4 +39,24 @@ public class Arreglo {
     return mayor;
     }
     
+    /*c) Método cuentaVocales, que reciba por parámetro un String y retorne la cantidad
+    de vocales que tiene la cadena.*/
+    
+    public static int cuentaVocales(String palabra){
+        int cantVocales = 0;
+        char[]cadena;
+        cadena=palabra.toCharArray();
+        for (int i = 0; i < palabra.length(); i++) {
+            if(cadena[i]== 'a' || cadena[i]== 'e' ||cadena[i]== 'i' ||cadena[i]== 'o' ||cadena[i]== 'u'){
+                cantVocales = cantVocales + 1;
+            }
+                
+            
+            
+        }
+        return cantVocales;
+    }
+    
+
+    
 }
